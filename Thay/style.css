@@ -106,4 +106,10 @@ p {
     
 }
 
+.email {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
