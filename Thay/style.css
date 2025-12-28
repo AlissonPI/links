@@ -1,6 +1,6 @@
 body.pag02{
     margin: 0;
-    background-color: #5a189a; 
+    background-color: #fa80cb; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body.pag02{
 }
 
 .pag02 div{
-    background-image: linear-gradient(to top, rgba(221, 38, 182, 0.87), rgb(100, 8, 187));
+    background-image: linear-gradient(to top, rgba(204, 63, 173, 0.87), rgba(182, 9, 235, 0.863));
     width: 320px;
     min-height: 520px;
     padding: 20px;
@@ -69,7 +69,7 @@ body.pag02{
 
 body.pag01 {
     margin: 0;
-    background-color: #5a189a; 
+    background-color: #fa80cb; 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
