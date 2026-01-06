@@ -1,6 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ---------------- PAGINA 02 ---------------- */
+
 body.pag02{
     margin: 0;
-    background: black url('FundoTela.png') center center / 100% 100% no-repeat fixed;
+    background: black url('siga.png') center center / 100% 100% no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,17 +18,12 @@ body.pag02{
 }
 
 .pag02 div{
-    background-image: linear-gradient(to top, rgba(216, 21, 174, 0.87), rgba(171, 35, 212, 0.863));
+    background-color: rgba(0, 0, 0, 0.329);
     width: 320px;
-    min-height: 520px;
+    min-height: 330px;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-.pag02 h1{
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .pag02 a{
@@ -44,7 +45,8 @@ body.pag02{
     width: 22px;
     position: absolute;
     left: 20px;
-    top: 0%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .pag02 p span{
@@ -67,35 +69,37 @@ body.pag02{
     text-align: center;
 }
 
-body.pag01 {
+/* ---------------- PAGINA 01 ---------------- */
+
+body.pag01{
     margin: 0;
     background: black url('FundoTela.png') center center / 100% 100% no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
-.container {
-    max-width: 700px;       
-    margin: 80px auto;      
+.container{
+    max-width: 700px;
+    margin: 80px auto;
     padding: 30px;
-    background-color: rgba(0,0,0,0.2); 
+    background-color: rgba(0,0,0,0.2);
     border-radius: 20px;
 }
 
-h1 {
+h1{
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
 }
 
-p {
+p{
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-.botao {
+.botao{
     background-color: white;
     color: #5a189a;
     padding: 8px 18px;
@@ -103,13 +107,62 @@ p {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    
 }
 
-.email {
+.email{
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
+/* ---------------- RESPONSIVIDADE ---------------- */
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+
+    .container{
+        margin: 40px 15px;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px){
+
+    body.pag02{
+        background: black url('siga.png') center center / cover no-repeat fixed;
+    }
+
+    .pag02 div{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .pag02 p{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .pag02 p img{
+        width: 20px;
+        left: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
