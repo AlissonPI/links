@@ -2,77 +2,11 @@
     box-sizing: border-box;
 }
 
-/* ---------------- PAGINA 02 ---------------- */
-
-body.pag02{
-    margin: 0;
-    background: black url('siga.png') center center / 100% 100% no-repeat fixed;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.pag02 main{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pag02 div{
-    background-color: rgba(0, 0, 0, 0.329);
-    width: 320px;
-    min-height: 330px;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.pag02 a{
-    text-decoration: none;
-}
-
-.pag02 p{
-    background-color: white;
-    color: black;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 25px;
-    font-size: 14px;
-    position: relative;
-    text-align: center;
-}
-
-.pag02 p img{
-    width: 22px;
-    position: absolute;
-    left: 20px;
-    top: 0%;
-}
-
-.pag02 p span{
-    display: inline-block;
-}
-
-.pag02 img{
-    width: 60px;
-    margin: 10px auto 20px auto;
-    display: block;
-}
-
-.pag02 p.thay{
-    background: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 20px 0;
-    position: static;
-    text-align: center;
-}
-
 /* ---------------- PAGINA 01 ---------------- */
 
 body.pag01{
     margin: 0;
-    background: black url('FundoTela.png') center center / 100% 100% no-repeat fixed;
+    background: black url('FundoTela.png') center center / cover no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -114,6 +48,73 @@ p{
     text-decoration: none;
 }
 
+/* ---------------- PAGINA 02 ---------------- */
+
+body.pag02{
+    margin: 0;
+    background: black url('siga.png') center center / cover no-repeat fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pag02 main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pag02 div{
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 320px;
+    min-height: 330px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.pag02 a{
+    text-decoration: none;
+}
+
+.pag02 p{
+    background-color: white;
+    color: black;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+
+.pag02 p img{
+    width: 22px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pag02 p span{
+    display: inline-block;
+}
+
+.pag02 img{
+    width: 60px;
+    margin: 10px auto 20px auto;
+    display: block;
+}
+
+.pag02 p.thay{
+    background: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    position: static;
+    text-align: center;
+}
+
 /* ---------------- RESPONSIVIDADE ---------------- */
 
 img{
@@ -141,10 +142,6 @@ img{
 
 /* Celular */
 @media (max-width: 480px){
-
-    body.pag02{
-        background: black url('siga.png') center center / cover no-repeat fixed;
-    }
 
     .pag02 div{
         width: 90%;
