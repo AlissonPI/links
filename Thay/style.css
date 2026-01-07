@@ -6,7 +6,7 @@
 
 body.pag01{
     margin: 0;
-    background: black url('FundoTela.png') center center / cover no-repeat fixed;
+    background: black url('FundoTela.png') center center / 100% 100% no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -52,7 +52,7 @@ p{
 
 body.pag02{
     margin: 0;
-    background: black url('siga.png') center center / cover no-repeat fixed;
+    background: black url('siga.png') center center / 100% 100% no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
