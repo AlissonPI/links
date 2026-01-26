@@ -77,15 +77,30 @@ body.pag02{
 }
 
 .pag02 p{
-    background-color: white;
+    position: relative;
+    background: white;
     color: black;
     padding: 12px;
     margin: 10px 0;
     border-radius: 25px;
     font-size: 14px;
-    position: relative;
     text-align: center;
 }
+
+.pag02 p::before{
+    content: "";
+    position: absolute;
+    inset: -4px; 
+    border-radius: inherit;
+    background: linear-gradient(
+        90deg,
+        #5fdcff,
+        #7b8cff,
+        #ff66f4
+    );
+    z-index: -1;
+}
+
 
 .pag02 p img{
     width: 22px;
@@ -105,15 +120,6 @@ body.pag02{
     display: block;
 }
 
-.pag02 p.thay{
-    background: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 20px 0;
-    position: static;
-    text-align: center;
-}
 
 /* ---------------- RESPONSIVIDADE ---------------- */
 
